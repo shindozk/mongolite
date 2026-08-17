@@ -1,5 +1,5 @@
 {
-  "name": "mongodb-lite",
+  "name": "@shindozk/mongo-lite",
   "version": "1.0.0",
   "description": "Local MongoDB-like database engine built with TypeScript and Bun.js. Lightweight, embedded, zero-dependency local database with MongoDB-compatible API.",
   "license": "MIT",
@@ -25,7 +25,7 @@
     "biome": "^1.9.0"
   },
   "bin": {
-    "mongodblite": "./dist/cli/app.js"
+    "mongo-lite": "./dist/cli/app.js"
   },
   "engines": {
     "bun": ">=1.2.0"
@@ -36,7 +36,7 @@
     "README.md"
   ],
   "keywords": [
-    "mongodb",
+    "mongo",
     "lite",
     "local",
     "database",
@@ -45,9 +45,10 @@
     "bun",
     "nosql",
     "document-store",
-    "sqlite-alternative"
+    "sqlite-alternative",
+    "mongodb-compatible"
   ],
-  "author": "MongoDBLite Contributors",
+  "author": "shindozk",
   "repository": {
     "type": "git",
     "url": "https://github.com/shindozk/mongodb-lite.git"
@@ -63,6 +64,6 @@
   },
   "funding": {
     "type": "github",
-    "url": "https://github.com/sponsors/mongodb-lite"
+    "url": "https://github.com/sponsors/shindozk"
   }
 }
