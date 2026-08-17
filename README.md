@@ -1,8 +1,8 @@
-# mongo-lite
+# Mongolite
 
-A lightweight, embedded MongoDB-compatible local database engine built with TypeScript and Bun.js.
+A lightweight, embedded local database engine for MongoDB built with TypeScript and Bun.js.
 
-> **Disclaimer**: This is a community-driven, non-profit open source project. It is not affiliated with, endorsed by, or licensed from MongoDB, Inc. **MongoDB is a registered trademark of MongoDB, Inc.** This project is a compatible implementation and uses the trademark only nominatively to indicate API compatibility.
+> **Disclaimer**: This is a community-driven, non-profit open source project. It is not affiliated with, endorsed by, or licensed from MongoDB, Inc. **MongoDB is a registered trademark of MongoDB, Inc.** This project uses the trademark only nominatively to indicate API compatibility with MongoDB.
 
 ## Features
 
@@ -32,15 +32,15 @@ By default, `.collection("name")` creates `.bson`. Use `.enc` by passing the pat
 ## Installation
 
 ```bash
-npm install @shindozk/mongo-lite
+npm install @shindozk/mongolite
 # or
-bun add @shindozk/mongo-lite
+bun add @shindozk/mongolite
 ```
 
 ## Usage
 
 ```typescript
-import { MongoDBLite } from "@shindozk/mongo-lite";
+import { MongoDBLite } from "@shindozk/mongolite";
 
 const db = new MongoDBLite({ path: "./data" });
 const users = db.collection("users");
@@ -62,7 +62,7 @@ const secretCol = db.collection("secrets", {}, "./data/secrets.enc");
 ## CLI
 
 ```bash
-mongo-lite
+mongolite
 ```
 
 ## Commands
@@ -77,7 +77,7 @@ bun start
 ## Project Structure
 
 ```
-mongo-lite/
+mongolite/
 ├── src/
 │   ├── lib/            # Helpers (ObjectId, filters, sort)
 │   ├── engine/         # Database, Collection, Cursor, Aggregate, Indexes, Transactions, Admin
