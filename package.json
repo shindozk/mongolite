@@ -1,0 +1,68 @@
+{
+  "name": "mongodb-lite",
+  "version": "1.0.0",
+  "description": "Local MongoDB-like database engine built with TypeScript and Bun.js. Lightweight, embedded, zero-dependency local database with MongoDB-compatible API.",
+  "license": "MIT",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "dev": "bun --watch src/index.ts",
+    "build": "bun build src/index.ts --outdir=./dist --target=bun",
+    "test": "bun test",
+    "start": "bun src/index.ts",
+    "prepublishOnly": "bun run build && bun test"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^5.7.0",
+    "biome": "^1.9.0"
+  },
+  "bin": {
+    "mongodblite": "./dist/cli/app.js"
+  },
+  "engines": {
+    "bun": ">=1.2.0"
+  },
+  "files": [
+    "dist/**/*",
+    "LICENSE",
+    "README.md"
+  ],
+  "keywords": [
+    "mongodb",
+    "lite",
+    "local",
+    "database",
+    "embedded",
+    "typescript",
+    "bun",
+    "nosql",
+    "document-store",
+    "sqlite-alternative"
+  ],
+  "author": "MongoDBLite Contributors",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shindozk/mongodb-lite.git"
+  },
+  "bugs": {
+    "url": "https://github.com/shindozk/mongodb-lite/issues"
+  },
+  "homepage": "https://github.com/shindozk/mongodb-lite#readme",
+  "sideEffects": false,
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/mongodb-lite"
+  }
+}

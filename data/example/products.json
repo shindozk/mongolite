@@ -1,0 +1,32 @@
+{
+  "docs": [
+    {
+      "_id": "6a814f56mongol6a4c420e73",
+      "name": "Notebook",
+      "price": 3500,
+      "category": "tech",
+      "createdAt": "2026-08-16T05:49:10.963Z"
+    },
+    {
+      "_id": "6a814f56mongol6a4cee0631",
+      "name": "Mouse",
+      "price": 150,
+      "category": "tech",
+      "createdAt": "2026-08-16T05:49:10.966Z"
+    },
+    {
+      "_id": "6a815055mongol6fe4c578b5",
+      "name": "Notebook",
+      "price": 3500,
+      "category": "tech",
+      "createdAt": "2026-08-16T05:53:25.686Z"
+    },
+    {
+      "_id": "6a815055mongol6fe4214021",
+      "name": "Mouse",
+      "price": 150,
+      "category": "tech",
+      "createdAt": "2026-08-16T05:53:25.689Z"
+    }
+  ]
+}

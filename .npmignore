@@ -1,0 +1,54 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Build output (we only include dist/ via "files" in package.json)
+dist/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Testing
+coverage/
+.nyc_output/
+
+# TypeScript
+*.tsbuildinfo
+
+# Misc
+*.pem
+.cache/
+.parcel-cache/
+.eslintcache
+
+# Source files (not needed in published package)
+src/
+tests/
+examples/
+docs/
+*.ts
+*.md
+!README.md
+!LICENSE
+tsconfig.json
+.babelrc
+.eslintrc.*
+.prettierrc*
+.biome*
+
+# Data files
+data/
